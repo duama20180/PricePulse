@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Головний екран</title>
+  <link rel="stylesheet" href="styles_main.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script type="module" src="chart_utils.js"></script>
+  <script type="module" src="script_main.js"></script>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+</head>
+<body class="main-page">
+  <header>
+    <div class="logo">PricePulse</div>
+    <div class="user-actions">
+      <span id="userName">test@user.com</span>
+      <button class="icon-btn" id="settingsBtn">⚙️</button>
+      <button class="icon-btn" id="logoutBtn">⏪</button>
+    </div>
+  </header>
+  <div class="container">
+    <div class="sidebar">
+      <div class="selection-controls">
+        <button id="viewTracked">Відстежувані товари</button>
+        <button id="addProductLink">Додати товари</button>
+        <button id="toggleSelectBtn">Вибрати товари</button>
+        <button id="cancelSelectBtn" style="display: none;">Скасувати</button>
+        <div id="selectedCount"></div>
+      </div>
+    </div>
+    <div class="content">
+      <div id="productContainer" class="product-container"></div>
+      <div class="pagination" id="pagination">
+        <button id="prevPageBtn">←</button>
+        <span id="pageInfo"></span>
+        <button id="nextPageBtn">→</button>
+      </div>
+      <div id="productModal" class="modal">
+     <!-- правильне модальне вікно -->
+        <div class="modal-content">
+        <span class="close-btn" id="closeModalBtn">×</span>
+        <div class="modal-layout">
+          <div class="modal-left">
+            <img id="modalImage" src="" alt="Фото товару" class="modal-image">
+            <h3 id="modalName"></h3>
+            <p id="modalPrice"></p>
+            <p id="modalOldPrice"></p>
+          </div>
+          <div class="modal-right">
+            <canvas id="modalChart" class="modal-chart"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </div>
+</body>
+</html>

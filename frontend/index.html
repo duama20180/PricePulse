@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Авторизація</title>
+  <link rel="stylesheet" href="style_index.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+
+</head>
+<body class="login-page">
+  
+  <div class="background-blur"></div>
+  
+  <div id="loginBox" class="login-box">
+    <h2>Вхід</h2>
+    <input type="text" id="username" placeholder="Логін" />
+    <input type="password" id="password" placeholder="Пароль" />
+    <button onclick="login()">Увійти</button>
+    <div class="login-options">
+      <a href="#" onclick="showForgotPassword(event)">Забули пароль?</a>
+      <a href="#" onclick="showRegister(event)">Зареєструватись</a>
+    </div>
+  </div>
+
+  <div id="forgotPasswordBox" class="modal-box hidden">
+    <h2>Відновлення паролю</h2>
+    <input type="text" id="forgotEmail" placeholder="Електронна пошта" />
+    <button onclick="resetPassword()">Надіслати</button>
+    <button onclick="hideModal()">Закрити</button>
+  </div>
+  
+  <div id="registerBox" class="modal-box hidden">
+    <h2>Реєстрація</h2>
+    <input type="text" id="regUsername" placeholder="Логін" />
+    <input type="email" id="regEmail" placeholder="Електронна пошта" />
+    <input type="password" id="regPassword" placeholder="Пароль" />
+    <button onclick="register()">Зареєструватись</button>
+    <button onclick="hideModal()">Закрити</button>
+  </div>
+  
+  <script src="script_index.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  height: 100%;
+}
+
+.login-page {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-blur {
+  background: url('bg.jpg') no-repeat center center/cover;
+  filter: blur(8px);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2vw;
+  border-radius: 1.5vw;
+  box-shadow: 0 0 1vw rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  text-align: center;
+  width: 25vw;
+  min-width: 300px;
+}
+
+.login-box h2 {
+  text-align: center;
+  margin: 0;
+}
+
+.login-box input {
+  padding: 1.5vw;
+  border: 0.1vw solid #ccc;
+  border-radius: 0.8vw;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.login-box button {
+  padding: 1.5vw;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 0.8vw;
+  cursor: pointer;
+  width: 100%;
+}
+
+.login-box button:hover {
+  background: #0056b3;
+}
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1vw;
+}
+
+.login-options a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 0.9em;
+}
+
+.login-options a:hover {
+  text-decoration: underline;
+}
+
+.modal-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2vw;
+  border-radius: 1.5vw;
+  box-shadow: 0 0 1vw rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  text-align: center;
+  width: 25vw;
+  min-width: 300px;
+  z-index: 1000;
+}
+
+.modal-box h2 {
+  margin: 0;
+}
+
+.modal-box input {
+  padding: 1.5vw;
+  border: 0.1vw solid #ccc;
+  border-radius: 0.8vw;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.modal-box button {
+  padding: 1.5vw;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 0.8vw;
+  cursor: pointer;
+  width: 100%;
+}
+
+.modal-box button:hover {
+  background: #0056b3;
+}
+
+.hidden {
+  display: none;
+}
