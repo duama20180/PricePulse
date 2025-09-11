@@ -1,0 +1,6 @@
+.idea/
+.venv/
+data/
+python/.env
+python/tests.py
+
