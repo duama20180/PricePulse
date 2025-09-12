@@ -161,9 +161,14 @@ API Queries Views → Frontend Displays Data
 ---
 
 ## Screenshots
-- Login page  
-- Main page with products
-- Product page  
+### Login Page
+![Login Page](screenshots/login_page.png)
+
+### Main Dashboard with Products
+![Main Dashboard](screenshots/main_page_with_products.png)
+
+### Product Modal with Price Chart
+![Product Modal](screenshots/product_page.png) 
   
 
 
