@@ -91,11 +91,6 @@ API Queries Views → Frontend Displays Data
 2. **Set Up Environment Variables**  
    Create a `.env` file in the root directory with the following:
    ```env
-   PG_HOST=localhost
-   PG_PORT=5433
-   PG_USER=postgres
-   PG_PASSWORD=your_password
-   PG_DB=price_pulse_db
    DB_NAME=price_pulse_db
    DB_USER=postgres
    DB_PASSWORD=your_password
